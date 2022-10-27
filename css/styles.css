@@ -53,7 +53,9 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* Хедер */
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -93,7 +95,8 @@ nav {
 } */
 
 .nav-list-item {
-  height: 100%;
+  /* width: calc((100% - 100px) / 3); */
+  /* height: 80px; */
 }
 
 /* Контакти хедера */
@@ -117,15 +120,15 @@ nav {
 .contact-phone-number {
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.heder-icon-mail {
+.heder-icon-mail, .heder-icon-phon {
   margin-right: 10px;
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.heder-icon-phon {
-  margin-right: 10px;
-}
+
 
 .contact-phone-number:hover .heder-icon-phon,
 .contact-phone-number:focus .heder-icon-phon,
@@ -333,10 +336,12 @@ color: var(--text-color-button-hover)
   justify-content: center;
   gap: 10px;
 }
+
 .comand-soc-item {
   width: 44px;
   height: 44px;
 }
+
 .comand-soc-link {
   width: 100%;
   height: 100%;
@@ -344,16 +349,20 @@ color: var(--text-color-button-hover)
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 
 }
+
 .comand-soc-link:hover,
 .comand-soc-link:focus,
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #2196f3;
 }
+
 .comand-soc-link:hover .comand-soc-icon,
 .comand-soc-link:focus .comand-soc-icon {
   fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comand-soc-icon,
 .clients-logo {
@@ -382,6 +391,7 @@ color: var(--text-color-button-hover)
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .clients-link:hover,
@@ -392,6 +402,7 @@ color: var(--text-color-button-hover)
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
   fill: var(--logo-button-contact-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Портфоліо */
@@ -419,6 +430,7 @@ color: var(--text-color-button-hover)
   background-color: var(--background-color-button);
   padding: 6px 25px;
   border: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -575,6 +587,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-soc-item {
   width: 44px;
   height: 44px;
+  
 }
 
 .footer-soc-link {
@@ -585,10 +598,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
   fill: #ffffff;
+   
 }
 
 /* Фокус в хедері, футері, кнопках */
@@ -613,20 +628,30 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Активна сторінка навігації */
+.header-list-nav {
+  /* position: relative; */
+}
+
+.nav-list {
+  height: 100%;
+  display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .list-activ {
   color: var(--logo-button-contact-color);
+  position: relative;
+  /* height: ; */
   /* width: 100%; */
 }
 
-.nav-list.list-activ::after {
+.list-activ::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -32px;
   display: block;
-  width: auto;
   height: 4px;
-
+  width: 100%;
   border-radius: 2px;
   background: var(--logo-button-contact-color);
 }
