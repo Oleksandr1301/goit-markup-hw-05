@@ -88,7 +88,6 @@ nav {
   padding-bottom: 32px;
   position: relative;
   gap: 50px;
-  
 }
 /* .header-list-nav .nav-list-item + .nav-list-item {
   margin-left: 50px;
@@ -123,12 +122,11 @@ nav {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.heder-icon-mail, .heder-icon-phon {
+.heder-icon-mail,
+.heder-icon-phon {
   margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .contact-phone-number:hover .heder-icon-phon,
 .contact-phone-number:focus .heder-icon-phon,
@@ -211,6 +209,15 @@ ul {
   margin-top: 30px;
   padding: 10px 32px;
   border: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio-button:hover {
+  box-shadow: 0 0 12px 3px var(--p-color-index);
+  transform: scale(1.1);
+  color: var(--text-color);
 }
 
 /* Секція №2 */
@@ -288,10 +295,10 @@ ul {
   justify-content: center;
 
   font-weight: 700;
-line-height: 1,14;
-text-align: center;
-text-transform: uppercase;
-color: var(--text-color-button-hover)
+  line-height: 1, 14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color-button-hover);
 }
 
 /* Секція №4 */
@@ -349,7 +356,7 @@ color: var(--text-color-button-hover)
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comand-soc-link:hover,
@@ -362,7 +369,6 @@ color: var(--text-color-button-hover)
 .comand-soc-link:hover .comand-soc-icon,
 .comand-soc-link:focus .comand-soc-icon {
   fill: #ffffff;
-  
 }
 .comand-soc-icon,
 .clients-logo {
@@ -392,7 +398,7 @@ color: var(--text-color-button-hover)
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -401,13 +407,12 @@ color: var(--text-color-button-hover)
 }
 
 .clients-logo {
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
   fill: var(--logo-button-contact-color);
-  
 }
 
 /* Портфоліо */
@@ -435,7 +440,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--background-color-button);
   padding: 6px 25px;
   border: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -472,7 +479,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .project-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .project-link:hover,
@@ -508,18 +514,17 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 0;
   background-color: rgba(33, 150, 243, 0.9);
-color: var(--background-color-button);
-height: 100%;
-width: 100%;
-transform: translateY(100%);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  color: var(--background-color-button);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-top-text-p {
   font-size: 18px;
-line-height: 1.56;
-padding: 64px 24px;
+  line-height: 1.56;
+  padding: 64px 24px;
 }
 
 /* Футер */
@@ -565,7 +570,6 @@ padding: 64px 24px;
   margin-top: 9px;
 }
 
-
 .contact-phone-number-futer,
 .email-futer {
   line-height: 1.71;
@@ -601,7 +605,6 @@ padding: 64px 24px;
 .footer-soc-item {
   width: 44px;
   height: 44px;
-  
 }
 
 .footer-soc-link {
@@ -617,7 +620,6 @@ padding: 64px 24px;
 
 .footer-soc-icon {
   fill: #ffffff;
-   
 }
 
 /* Фокус в хедері, футері, кнопках */
@@ -670,7 +672,6 @@ padding: 64px 24px;
   background: var(--logo-button-contact-color);
 }
 
-
 .backdrop {
   width: 100%;
   height: 100%;
@@ -685,7 +686,8 @@ padding: 64px 24px;
   min-height: 580px;
   background-color: var(--text-color-button-hover);
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50%;
   left: 50%;
